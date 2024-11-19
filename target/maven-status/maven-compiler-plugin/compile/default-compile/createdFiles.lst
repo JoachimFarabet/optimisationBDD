@@ -1,0 +1,12 @@
+com\exo1\exo1\controller\TaskController.class
+com\exo1\exo1\service\TaskService.class
+com\exo1\exo1\controller\UserController.class
+com\exo1\exo1\mapper\ProjetMapperImpl.class
+com\exo1\exo1\repository\TaskRepository.class
+com\exo1\exo1\repository\UserRepository.class
+com\exo1\exo1\mapper\TaskMapperImpl.class
+com\exo1\exo1\repository\ProjetRepository.class
+com\exo1\exo1\controller\ProjetController.class
+com\exo1\exo1\service\ProjetService.class
+com\exo1\exo1\mapper\UserMapperImpl.class
+com\exo1\exo1\service\UserService.class
