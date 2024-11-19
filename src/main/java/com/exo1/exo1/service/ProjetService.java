@@ -6,6 +6,8 @@ import com.exo1.exo1.mapper.ProjetMapper;
 import com.exo1.exo1.repository.ProjetRepository;
 import com.exo1.exo1.repository.TaskRepository;
 import lombok.AllArgsConstructor;
+
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.webjars.NotFoundException;
 
@@ -18,8 +20,8 @@ public class ProjetService {
     private ProjetMapper projetMapper;
     private TaskRepository taskRepository;
 
-    public List<ProjetDto> findAll() {
-        return projetMapper.toDtos(projetRepository.findAll());
+    public List<ProjetDto> findAll(Pageable pageable) {
+        return projetMapper.toDtos(projetRepository.findAll(pageable).getContent());
     }
 
     public ProjetDto findById(long id) {
